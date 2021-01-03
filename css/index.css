@@ -13,6 +13,12 @@
     font-weight: 500;
 }
 
+.barlow-medium-batu {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
 html {
     user-select: none;
     -webkit-user-select: none;
