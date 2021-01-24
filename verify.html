@@ -1,94 +1,95 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
+<head>
 
-        <!-- Title of the webpage -->
-        <title>Developer Student Club TOBB ETU</title>
+    <!-- Title of the webpage -->
+    <title>Developer Student Club TOBB ETU</title>
 
-        <!-- Favicon linking -->
-        <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
-        <link rel="manifest" href="icons/favicons/site.webmanifest">
+    <!-- Favicon linking -->
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicons/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicons/site.webmanifest">
 
-        <!--Links to css CDN's-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,500" rel="stylesheet">
-        
-        <!-- Links to css files -->
-        <link rel="stylesheet" href="css/verify.css">
-        <link rel="stylesheet" href="css/index.css">
-        <link rel="stylesheet" href="css/team.css">
-        <link rel="stylesheet" href="css/svg.css">
+    <!--Links to css CDN's-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Barlow:100,200,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
-        <!--Meta tags for SEO and Responsiveness-->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Description" content="DSC TOBB ETU (TOBB University of Economics and Technology) is a Google Developers program for university students, with an aim to help students build their development skills.">
-    
-    </head>
+    <!-- Links to css files -->
+    <link rel="stylesheet" href="css/verify.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/team.css">
+    <link rel="stylesheet" href="css/svg.css">
 
-    <body>
+    <!--Meta tags for SEO and Responsiveness-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="DSC TOBB ETU (TOBB University of Economics and Technology) is a Google Developers program for university students, with an aim to help students build their development skills.">
 
-        <div>
+</head>
 
-                <div class="container-main holded-container" id="stayupdated" style:"text-align: center">
+<body>
 
-                    
-                    <img src="images/white.png" style="display:block; margin-left: auto; margin-right: auto; width:40%; margin-bottom: 2vh;" class="logo-nav" alt="DSC TOBB ETU">
-                    <img src="images/color.png" style="display:block; margin-left: auto; margin-right: auto; width:40%; margin-bottom: 2vh;" class="logo-nav-light" alt="DSC TOBB ETU">
+    <div>
 
-                    <h1 class="barlow-medium text-center" style="margin-bottom: auto;">
-                        DSC TOBB ETU Certificate Verification System
-                    </h1>
+        <div class="container-main holded-container" id="stayupdated" style: "text-align: center">
 
-                    <h2 class="barlow-medium text-center" id="cert_status">
-            
-                        Verify by entering your certificate ID.
-            
-                    </h2>
-            
-                    <input type="number" placeholder="Enter Certificate ID" class="text-field-maker" id="cert_id">
-            
-                    <div class="button-maker" >
-            
-                        <div class="barlow-thin button-text" onclick="checkCertificate()" href="https://dsc.community.dev/tobb-university-of-economics-and-technology">
-            
-                            Check
-            
-                        </div>
-            
-                    </div>
 
-                    <script>
+            <img src="images/white.png" style="display:block; margin-left: auto; margin-right: auto; width:40%; margin-bottom: 2vh;" class="logo-nav" alt="DSC TOBB ETU">
+            <img src="images/color.png" style="display:block; margin-left: auto; margin-right: auto; width:40%; margin-bottom: 2vh;" class="logo-nav-light" alt="DSC TOBB ETU">
 
-                    </script>
-                </div>  
-                
+            <h1 class="barlow-medium text-center" style="margin-bottom: auto;">
+                DSC TOBB ETU Certificate Verification System
+            </h1>
 
-<!--                 <div class="barlow-medium text-center" style="margin-bottom: 50px;">
+            <h2 class="barlow-medium text-center" id="cert_status">
+
+                Verify by entering your certificate ID.
+
+            </h2>
+
+            <input type="number" placeholder="Enter Certificate ID" class="text-field-maker" id="cert_id">
+
+            <div class="button-maker">
+
+                <div class="barlow-thin button-text" onclick="checkCertificate()" href="https://dsc.community.dev/tobb-university-of-economics-and-technology">
+
+                    Check
+
+                </div>
+
+            </div>
+
+            <div class="opensans-medium text-center" id="cert_out"></div>
+            <script>
+            </script>
+        </div>
+
+
+        <!--                 <div class="barlow-medium text-center" style="margin-bottom: 50px;">
                     <a href="https://medium.com/gdg-vit" style="text-decoration: underline;">Read on medium ></a>
                 </div> -->
 
-                
 
+
+    </div>
+
+
+
+    <div class="footer container-main  container-main-last">
+
+        <div class="dark-light-toggle barlow-medium text-center" id="dark-light-toggle">
+            <p>I want dark mode</p>
         </div>
 
+    </div>
+
+    <!--Links to JS files and JS CDN's-->
+    <script src="./js/jq.js"></script>
+    <script src="./js/certificateVerification.js"></script>
 
 
-        <div class="footer container-main  container-main-last">
-
-            <div class="dark-light-toggle barlow-medium text-center" id="dark-light-toggle">
-                <p>I want dark mode</p>
-            </div>
-
-        </div>
-
-        <!--Links to JS files and JS CDN's-->
-        <script src="./js/jq.js"></script>
-        <script src="./js/certificateVerification.js"></script>
-
-
-    </body>
+</body>
 
 </html>
